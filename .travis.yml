@@ -5,3 +5,5 @@ install:
   - pip install -r requirements.txt
 script:
   - skopt/tests/runner.py
+before_install:
+  - chmod +x skopt/tests/runner.py
