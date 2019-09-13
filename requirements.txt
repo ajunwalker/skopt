@@ -1,0 +1,2 @@
+GPyOpt==1.2.5
+scikit-learn==0.21.2
