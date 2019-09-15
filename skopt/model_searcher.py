@@ -71,10 +71,6 @@ class ModelSearcher:
 
         param_dict = {}
 
-        # Add early stopping for SGD algorithms
-        if self.selected_model in (LinearSVC, LinearSVR):
-            param_dict['early_stopping'] = True
-
         # Construct parameter dict for model
         for param, value in zip(self.grid, params[0]):
             if param['type'] == 'discrete':
