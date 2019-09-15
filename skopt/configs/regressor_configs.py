@@ -13,21 +13,21 @@ all_regressor_configs = {
         },
         {
             'name'  : 'n_estimators',
-            'type'  : 'continuous',
+            'type'  : 'discrete',
             'domain': (50, 300)
         }
     ],
 
     'LinearSVR': [
         {
-            'name'  : 'alpha',
+            'name'  : 'tol',
             'type'  : 'continuous',
-            'domain': (1e-6, 1e-2),
+            'domain': (1e-5, 1e-1),
         },
         {
-            'name'  : 'max_iter',
-            'type'  : 'discrete',
-            'domain': (200,),
+            'name'  : 'C',
+            'type'  : 'continuous',
+            'domain': (1e-4, 25),
         }
     ],
 
