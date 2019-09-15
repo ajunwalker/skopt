@@ -17,8 +17,10 @@ Installation
 ------------
 
 skopt has been tested to work with the following packages:
+
 - GPyOpt==1.2.5
 - scikit-learn==0.21.2
+
 Supported algorithms
 --------------------
 
@@ -37,7 +39,7 @@ Regression
 Getting started
 ---------------
 
-Below is a simple example of using skopt to find the optimal parameters for a random forest classifiers with features ``X`` and labels ``y``.::
+Below is a simple example of using skopt to find the optimal parameters for a random forest classifiers with features ``X`` and labels ``y``::
 
     from skopt import model_searcher
     searcher = model_searcher.ModelSearcher('RandomForestClassifier')
