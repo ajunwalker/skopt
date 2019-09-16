@@ -5,8 +5,8 @@ from sklearn.model_selection import cross_validate
 from sklearn.svm import LinearSVC, LinearSVR
 
 # Local imports
-from .configs.classifier_configs import all_classifier_configs
-from .configs.regressor_configs import all_regressor_configs
+from configs.classifier_configs import all_classifier_configs
+from configs.regressor_configs import all_regressor_configs
 
 class ModelSearcher:
     """
@@ -17,6 +17,7 @@ class ModelSearcher:
     def __init__(self, model_name: str) -> None:
         """
         Initializes models and grids for grid search.
+        :param str model_name:
         """
 
         available_classifiers = {
@@ -61,8 +62,7 @@ class ModelSearcher:
         """
         Fits model with paramaters selected by bayesian optimization.
 
-        Args:
-            param: Parameters for model.
+        :param list params: Parameters for model.
         """
         print(params)
 
@@ -100,10 +100,9 @@ class ModelSearcher:
         """
         Perform bayesian optimization on hyperparameter space.
 
-        Args:
-            x : Array containing training input data.
-            y : Array containing data labels.
-            max_iter : Number of iterations to perform bayesian optimization.
+        :param list x: Array containing training input data.
+        :param list y: Array containing data labels.
+        :param int max_iter: Number of iterations to perform bayesian optimization.
         """
 
         if metric not in self.metrics:
