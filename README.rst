@@ -2,7 +2,7 @@
 
 |Travis|_ |Codecov|_
 
-.. |Travis| image:: https://travis-ci.com/ajunwalker/skopt.svg?branch.master
+.. |Travis| image:: https://travis-ci.com/ajunwalker/skopt.svg?branch=master
 .. _Travis: https://travis-ci.com/ajunwalker/skopt
 
 .. |Codecov| image:: https://codecov.io/gh/ajunwalker/skopt/branch/master/graph/badge.svg
